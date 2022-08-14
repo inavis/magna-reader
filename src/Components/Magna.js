@@ -37,6 +37,7 @@ export function Magna() {
       .then((data) => {
         // console.log(data);
         setCurBook(bookid - 1);
+        setCurChapter(data?.chapter_ids[0])
       })
       .catch((err) => console.log(err));
   }
