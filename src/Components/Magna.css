@@ -1,0 +1,83 @@
+
+.box{
+    display:flex;
+    flex:1;
+    flex-direction:row;
+    position:absolute;
+}
+.subbox{
+    display:block;
+    position:relative;
+    /* border: 2px solid red; */
+}
+
+.main-btn,.sub-btn{
+    height: 50px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: rgb(69, 66, 66);
+    border: 1px solid white;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.main-btn:hover,.sub-btn:hover{
+    cursor: pointer;
+}
+
+.width-50{
+    width: 50%;
+}
+.width-100{
+    width: 100%;
+}
+.yellow-text{
+    color: rgb(169, 140, 14);
+}
+
+.count{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.modal{
+    display: block;
+    background-color: black;
+    opacity: 0.8;
+}
+svg{
+    width: 114px;
+    height: 114px;
+    z-index: 1060;
+    position: fixed;
+    top: 45%;
+}
+.circle{
+    fill: none;
+    stroke-width: 10px;
+    stroke: rgb(19,18,18);
+}
+.loader{
+    fill: none;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 100;
+    stroke: rgb(169, 140, 14);
+    animation: load 10s infinite;
+}
+@keyframes load {
+    0%{
+        stroke-dasharray: 360;
+    }
+    50%{
+        stroke-dasharray: 1;
+    }
+    100%{
+        stroke-dasharray: 360;
+    }
+}
