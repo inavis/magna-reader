@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import { Button } from "./Button";
-require("./Magna.css");
-export function Magna() {
+require("./Manga.css");
+export function Manga() {
   const [books, setBooks] = useState([]);
   const [curBook, setCurBook] = useState(null);
   const [lastChapter, setLastChapter] = useState(3);
